@@ -11,6 +11,15 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./dist/jquery.min.js"></script>
+    <script src="dist/slippry.min.js"></script>
+    <link rel="stylesheet" href="dist/slippry.css" />
     <title>OtaghBazargan</title>
   </head>
   <body>
@@ -53,7 +62,7 @@
         </div>
         <div class="menu-center">
           <span class="Round">
-            <img src="img/apple-icon.png">
+            <img src="img/apple-icon.png" />
           </span>
           <h3>اتاق بازرگانی صنایع معادن و کشاورزی خراسان رضوی</h3>
           <p>سال تولید, پشتیبانی ها ومانع زدایی ها</p>
@@ -70,7 +79,27 @@
       </nav>
       <div class="pic-haram">
         <div class="slider">
-            <img src="./img/picharam.jpg">
+          <ul id="slippry-demo">
+            <li>
+              <a href="#slide1"
+                ><img src="./img/picharam.jpg" alt="Welcome to Slippry!"
+              /></a>
+            </li>
+            <li>
+              <a href="#slide2"
+                ><img
+                  src="./img/image-1.jpg"
+                  alt="This is an awesome jQuery slider plugin."
+              /></a>
+            </li>
+            <li>
+              <a href="#slide3"
+                ><img
+                  src="./img/image-2.jpg"
+                  alt="Check it out, you are going to <span class='red'>♥</span> it :)"
+              /></a>
+            </li>
+          </ul>
         </div>
         <div class="section-right">
           <h1>برگزاری محفل ادبی عطر یاس در حرم امام رضا (ع)</h1>
@@ -164,11 +193,17 @@
         <div class="section-info">
           <div id="section-right">
             <ul>
-              <li><a> <i class="fas fa-plus"></i> درباره اتاق </a> </li>
-              <li><a> <i class="fas fa-plus"></i> هیت ریسه </a></li>
-              <li><a> <i class="fas fa-plus"></i> قانون اتاق </a></li>
               <li>
-                <a > <i class="fas fa-plus"></i>مشاوران </a>
+                <a> <i class="fas fa-plus"></i> درباره اتاق </a>
+              </li>
+              <li>
+                <a> <i class="fas fa-plus"></i> هیت ریسه </a>
+              </li>
+              <li>
+                <a> <i class="fas fa-plus"></i> قانون اتاق </a>
+              </li>
+              <li>
+                <a> <i class="fas fa-plus"></i>مشاوران </a>
               </li>
             </ul>
           </div>
@@ -177,13 +212,86 @@
               <li>
                 <a> <i class="fas fa-plus"></i>تاریخچه </a>
               </li>
-              <li><a><i class="fas fa-plus"></i> هیت نمایندگان </a></li>
-              <li><a><i class="fas fa-plus"></i> مسولان اجرایی </a></li>
-              <li><a><i class="fas fa-plus"></i> تماس با ما </a></li>
+              <li>
+                <a><i class="fas fa-plus"></i> هیت نمایندگان </a>
+              </li>
+              <li>
+                <a><i class="fas fa-plus"></i> مسولان اجرایی </a>
+              </li>
+              <li>
+                <a><i class="fas fa-plus"></i> تماس با ما </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="info">
+        <h3>خدمات بازرگانی</h3>
+        <ul>
+          <li>کارت بازرگانی</li>
+          <li>کارت عضویت</li>
+          <li>صدور گواهی مبدا</li>
+          <li>دستور العمل آیین نامه</li>
+          <li>خدمات الکترونیکی</li>
+        </ul>
+      </div>
+      <div class="info-orginal-news">
+        <div class="info-news">
+          <div class="info-right">
+            <img src="img/گل-رز-آبی-3.jpg" alt="" />
+            <p>
+              شورای گفت گوی دولت و <br />
+              بخش خصوصی خراسان رضوی
+            </p>
+          </div>
+          <div class="info-left">
+            <ul>
+              <li>
+                <a> <i class="fas fa-plus"></i> اخبار </a>
+              </li>
+              <li>
+                <a> <i class="fas fa-plus"></i> درباره شورا </a>
+              </li>
+              <li>
+                <a> <i class="fas fa-plus"></i> اعضای شورا </a>
+              </li>
+              <li>
+                <a> <i class="fas fa-plus"></i>کمیته حمایت از کسب و کار </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a> <i class="fas fa-plus"></i>صورتجلسات شورا </a>
+              </li>
+              <li>
+                <a><i class="fas fa-plus"></i> صورتجلسات دبیرخانه شورا </a>
+              </li>
+              <li>
+                <a><i class="fas fa-plus"></i>قوانین و مقررات </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="dokme">
+        <button type="button" class="Vordi-to-shoaara">ورود ب صفحه اصلی شورا</button>
+      </div>
+      </div>
+      <div id="info-last">
+        <ul>
+          <li>سامانه یکپارچه کارت بازرگانی هوشمند</li>
+          <li>سامانه رسیدگی ب شکایات</li>
+          <li>سامانه ملی قوانین و مقررات</li>
+          <li>دایرکتوری اعضا</li>
+        
+        </ul>
+      </div>
     </section>
+
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery("selector").slippry();
+      });
+    </script>
   </body>
 </html>
