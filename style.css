@@ -86,13 +86,37 @@ a{
     flex-direction: row;
     justify-content: space-between;
     font-size: 8px;
-    height: 70px;
+    height: auto;
     text-align: center;
     align-items: center;
     border-radius: 23px;
     position: relative;
     bottom: 21px;
     background-color: rgb(255, 255, 255);
+
+}
+.menu-center {
+position: relative;
+bottom: 20px;
+}
+.menu .Round{
+    width: 92px;
+    height: 75px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    border-radius: 100%;
+    background: white;
+    overflow: hidden;
+}
+.menu .Round img{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    bottom: 0;
+    right: 9px;
 
 }
 .menu ul {
@@ -124,10 +148,24 @@ a{
 }
 
 /* pic haram */
+.pic-haram{
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+}
+.slider img{
+    width: 100%;
+    height: 259px;
+}
 .section-right{
     width: 40%;
     padding-right: 34px;
-    position: relative;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0;
+    color: white;
 }
 .section-right p{
     font-size: 11px;
@@ -304,7 +342,7 @@ a{
 } 
 .section-info ul li {
     color: white;
-    width: 150px;
+    width: 120px;
     height: 21px;
     margin: 14px;
  
@@ -325,4 +363,33 @@ a{
 .section-info ul li a i{
     padding-left: 10px;
     color: rgba(225, 241, 0);
+}
+/* info */
+.info h3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: rgba(210, 188, 6);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.info ul {
+    color: white;
+    display: flex;
+    font-size: 10px;
+    flex-wrap: wrap; 
+    margin-top: 10px;
+}
+.info ul li {
+    margin-right: 33px;
+    width: 67px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* info-news */
+.info-news{
+background-color: red;
 }
