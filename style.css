@@ -29,15 +29,16 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  
     background-color: rgba(30,29, 25 );
     color: white;
     font-size: 15px;
     height: 57px;
 }
 .icon{
+    height: 100%;
     width: 50%;
+    padding-top: 10px;
 }
 .icon ul {
     display: flex;
@@ -62,6 +63,7 @@ a{
 .input-serach{
     margin-left: 60px;
     font-size: 7px;
+    padding-top: 10px;
 }
 .input-serach input{
     border-radius: 10px;
@@ -86,12 +88,13 @@ a{
     flex-direction: row;
     justify-content: space-between;
     font-size: 8px;
-    height: auto;
+    height: 93px;
     text-align: center;
     align-items: center;
     border-radius: 23px;
     position: relative;
-    bottom: 21px;
+    bottom: 19px;
+   
     background-color: rgb(255, 255, 255);
 
 }
@@ -150,8 +153,6 @@ bottom: 20px;
 /* pic haram */
 .pic-haram{
     position: relative;
-    top: 0px;
-    bottom: 0px;
 }
 .slider img{
     width: 100%;
@@ -161,10 +162,11 @@ bottom: 20px;
     width: 40%;
     padding-right: 34px;
     position: absolute;
-    top: 0px;
+    top: -2px;
     right: 0px;
     left: 0px;
     bottom: 0;
+    height: 80%;
     color: white;
 }
 .section-right p{
@@ -182,14 +184,23 @@ bottom: 20px;
     position: absolute;
     left: 0;
     cursor: pointer;
+    bottom: 40px;
 }
-
 .items{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     justify-content: space-evenly;
-    margin-top: 50px;
     background-color: rgba(29 , 28, 34);
+}
+
+.items-cart{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+    z-index: 1;
+    bottom: 13px;
 }
 .item-1{
     display: flex;
@@ -197,6 +208,7 @@ bottom: 20px;
     width: 200px;
     position: relative;
     margin-top: 5px;
+    margin-right: 10px;
 }
 .item-1 img{
     border-radius: 9px;
@@ -224,6 +236,7 @@ bottom: 20px;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    transition: 500ms;
 
 }
 .item-1:hover div
@@ -234,8 +247,6 @@ bottom: 20px;
     right: 8px;
     align-items: start !important;
     flex-direction: column;
-   
-    
 }
 .item-1:hover .item-back{
     display: block;
@@ -478,7 +489,7 @@ bottom: 20px;
     border: none;
     height: 18px;
     border-radius: 6px;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 8px;
     margin-right: 200px;
     cursor: pointer;
@@ -507,4 +518,73 @@ bottom: 20px;
     cursor: pointer;
     padding-left: 26px;
     width: 120px;
+}
+
+
+
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0px;
+    right: 573px
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
