@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    direction: rtl;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: iransans;
+    src: url(font/iransans.woff2) format('woff2');
+}
+body{
+    font-family: inherit;
+    font-family: iransans;
+}
+ul,li,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+.icon-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(30,29, 25 );
+    color: white;
+    font-size: 15px;
+    height: 57px;
+}
+.icon{
+    width: 50%;
+}
+.icon ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 89px;
+    font-size: 11px;
+}
+.icon ul li {
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon ul li a{
+    font-size: 7px;
+    padding-left: 2px;
+    
+}
+.icon ul li:nth-child(4) {
+    padding-right: 35px;
+}
+.input-serach{
+    margin-left: 60px;
+    font-size: 7px;
+}
+.input-serach input{
+    border-radius: 10px;
+    font-size: 9px;
+    outline: none;
+    width: 145px;
+    border: none;
+    padding-right: 15px;
+}
+.input-serach a{
+    padding-right: 4px;
+}
+.input-serach i{
+    position: relative;
+    right: 14px;
+    color: black;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 8px;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    border-radius: 23px;
+    position: relative;
+    bottom: 21px;
+    background-color: rgb(255, 255, 255);
+
+}
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.menu ul li {
+    padding-right: 4px;
+    height: 16px;
+    font-weight: 500;
+}
+.menu ul li i {
+    color: rgb(0, 44, 90);
+    padding-right: 4px;
+}
+
+/* .menu ul li:hover{
+    
+} */
+.menu ul li:hover{
+    border-image-slice: 1;
+    color: rgba(17,59,101,1);
+  border-width: 5px;
+    border-bottom: 1px solid;
+    font-weight: 600;
+   border-image-source:linear-gradient(90deg, rgba(255,255,255,1) 1%, rgba(17,59,101,1) 54%, rgba(247,247,247,1) 100%) ;
+}
+
+/* pic haram */
+.section-right{
+    width: 40%;
+    padding-right: 34px;
+    position: relative;
+}
+.section-right p{
+    font-size: 11px;
+}
+.section-right button{
+    background-color: rgba(215, 205, 11);
+    border: none;
+    border-radius: 13px;
+    padding-right: 17px;
+    padding-left: 17px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-weight:bold ;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: rgba(29 , 28, 34);
+}
+.item-1{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: relative;
+    margin-top: 5px;
+}
+.item-1 img{
+    border-radius: 9px;
+    height:170px;
+}
+#description{
+    font-size: 8px;
+    position: absolute;
+    height: 53px;
+    bottom: -1px;
+    padding-right: 7px;
+    background-color: rgba(4,30,123);
+    width: 100%;
+    display: flex;
+    border-top-right-radius:20px ;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: .85;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+.item-1:hover div
+{
+    bottom: 9px !important;
+    height: 151px !important;
+    width: 184px !important;
+    right: 8px;
+    align-items: start !important;
+    flex-direction: column;
+   
+    
+}
+.item-1:hover .item-back{
+    display: block;
+}
+.item-1:hover .item-p{
+    display: inline-block;
+}
+.item-p{
+    padding-bottom: 20px;
+    font-size: 7px;
+    display: none;
+}
+.item-back{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    background-color: white;
+    opacity: none !important;
+    display: none;
+    position: absolute;
+    bottom: -3px;
+    padding-top: 12px;
+    right: -6px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#item-news{
+    padding-right: 44px;
+    padding-bottom: 8px;
+    font-size: 9px;
+    display: none;
+    cursor: pointer;
+}
+.item-1:hover #item-news{
+    display: inline-block;
+}
+
+/* sopurted */
+
+#info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#info ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 10px;
+    color: aliceblue;
+    padding-top: 15px;
+}
+
+#info ul li{
+    cursor: pointer;
+    padding-left: 26px;
+}
+#info::after::before{
+  position: relative;
+  position: absolute;
+  background: rgba(144 ,124,255,0.08);
+  width: 200px;
+  content: '';
+  bottom: 90px;
+  left: -250px;
+  height: 250px;
+  transform: skewX(10deg);
+  border-radius: 10px 2px 4px red;
+
+}
+/* section pic */
+.section-pic{
+    width: 100%;
+    height: 178px;
+    margin-bottom: 23px;
+    margin-top: 13px;
+    position: relative;
+    overflow: hidden;
+}
+.section-pic img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.section-pic .section-info{
+    background: rgb(13,6,83);
+    background: linear-gradient(90deg, rgba(13,6,83,1) 0%, rgba(7,30,100,1) 88%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 55px 1px 64px 67px #071e64;
+
+} 
+.section-info ul li {
+    color: white;
+    width: 150px;
+    height: 21px;
+    margin: 14px;
+ 
+    
+}
+.section-info ul li a{
+    background-color: rgb(10,12,86);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+    display: flex;
+    border-radius: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.section-info ul li a i{
+    padding-left: 10px;
+    color: rgba(225, 241, 0);
+}
