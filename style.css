@@ -88,15 +88,14 @@ a{
     flex-direction: row;
     justify-content: space-between;
     font-size: 8px;
-    height: 93px;
+    height: 63px;
+    padding-top: 20px;
     text-align: center;
     align-items: center;
     border-radius: 23px;
     position: relative;
     bottom: 19px;
-   
     background-color: rgb(255, 255, 255);
-
 }
 .menu-center {
 position: relative;
