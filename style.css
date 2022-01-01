@@ -25,7 +25,9 @@ a {
 .container {
   max-width: auto;
   margin: auto;
+  position: relative;
 }
+
 
 .icon-header {
   display: flex;
@@ -98,7 +100,50 @@ a {
   bottom: 0;
 }
 
+/* Menu-icon Responisve */
+
+.menu-icon{
+  font-size: 42px;
+  width: 50%;
+  height: 100%;
+}
+.menu-icon i {
+  padding-right: 30px;
+  padding-top: 20px;
+}
+.menu-block{
+  display: flex;
+  width: 100%;
+  height: 75%;
+  background: #060b25;
+  position: absolute;
+  top: 98px;
+  z-index: 4;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 23px;
+  line-height: 57px;
+}
+.menu-block ul li{
+  width: 100%;
+  height: 50px;
+  padding-right: 15px;
+  color: white;
+}
+.menu-block ul li:hover {
+  color: rgba(17, 59, 101, 1);
+  font-weight: 600;
+  background-color: #46548c;
+ 
+}
+.menu-block ul li i {
+  display: none;
+}
+
 /* Menu */
+
 .menu {
   display: flex;
   font-size: 17px;
@@ -345,37 +390,39 @@ a {
     cursor: pointer;
 }
 #item-news {
-  font-size: 14px;
+  font-size: 19px;
   display: none;
   cursor: pointer;
 }
 .item-1:hover #item-news {
   display: flex;
-  padding-right: 34px;
+  padding-right: 84px;
 }
 
 /* sopurted */
 
 #info {
-  margin-bottom: 13px;
+  margin-bottom: 5px;
   width: 100%;
 }
 
 #info ul {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
   font-size: 26px;
   color: aliceblue;
   font-weight: 100;
   padding: 37px 0px;
+  align-items: baseline;
 }
 
 #info ul li {
   cursor: pointer;
   padding-left: 41px;
   margin-right: 14px;
+  margin-top: 10px;
 }
 #info::after::before {
   position: relative;
@@ -575,7 +622,7 @@ a {
     font-weight: 700;
 }
 
-/* info-lasta */
+/* info-laste */
 #info-last {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -587,7 +634,7 @@ a {
   flex-wrap: nowrap;
   justify-content: center;
   flex-direction: row;
-  font-size: 21px;
+  font-size: 26px;
   color: aliceblue;
   padding-top: 15px;
   text-align: center;
@@ -596,8 +643,6 @@ a {
 #info-last ul li {
     cursor: pointer;
     padding-left: 0px;
-    margin-left: 100px;
-    width: 171px;
 }
 
 .mySlides {
@@ -678,3 +723,6 @@ img {
     font-size: 11px;
   }
 }
+
+
+

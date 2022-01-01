@@ -11,14 +11,15 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <script src="dist/jquery.min.js"></script>
-    <script src="dist/slippry.min.js"></script>
+    <!-- <script src="dist/jquery.min.js"></script>
+    <script src="dist/slippry.min.js"></script> -->
     <link rel="stylesheet" href="dist/slippry.css" />
+    <!-- <link rel="stylesheet" href="./cssResponsive.css" /> -->
     <title>OtaghBazargan</title>
   </head>
   <body>
     <header class="container">
-      <div class="icon-header">
+      <div class="icon-header" id="menu-icon-responsive">
         <div class="icon">
           <ul>
             <li><i class="fab fa-telegram-plane"></i></li>
@@ -38,7 +39,7 @@
           </ul>
         </div>
       
-        <div class="input-serach">
+        <div class="input-serach" >
           <div class="input-serach-top">
           <i class="fas fa-search"></i>
           <input type="search" placeholder=" جستجو " />
@@ -46,8 +47,8 @@
         </div>
         </div>
       </div>
-      <nav class="menu">
-        <div class="menu-right">
+      <nav class="menu" id="menu">
+        <div class="menu-right" id="menu-right">
           <ul>
             <li>
               <a> صفحه نخست </a>
@@ -65,7 +66,7 @@
           </ul>
         </div>
 
-        <div class="menu-center">
+        <div class="menu-center" id="menu-center">
           <div class="menu-center-style">
           <span class="Round">
             <img src="img/apple-icon.png" />
@@ -74,7 +75,7 @@
           <p>سال تولید, پشتیبانی ها ومانع زدایی ها</p>
         </div>
         </div>
-        <div class="menu-left">
+        <div class="menu-left" id="menu-left">
           <ul>
             <li><a> آموزش و پژوهش </a> <i class="fas fa-plus"></i></li>
             <li><a> مشاوران </a> <i class="fas fa-plus"></i></li>
@@ -344,8 +345,50 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides,1000); // Change image every 2 seconds
+        setTimeout(showSlides,102200); // Change image every 2 seconds
       }
+
+      // let menu = document.createElement("div");
+      // let icon = document.createElement("i");
+      // icon.className += 'fas fa-bars';
+      // menu.className +='menu-icon'
+      // menu.appendChild(icon)
+
+      var navbar=document.getElementById('menu-icon-responsive')
+
+      var str= document.createElement(`div`)
+      str.className +='menu-icon'
+      str.innerHTML=`<i class='fas fa-bars' >  </i>`
+
+      navbar.prepend(str)
+      let menuCenterImg = document.getElementById('menu-center');
+      str.addEventListener('click',MyFunction);
+      let body=document.querySelector('body').addEventListener('click',removeClass)
+      
+
+     function MyFunction(){
+       let menuRight = document.getElementById('menu-right');
+       let menuLeft = document.getElementById('menu-left');
+       let menuDescription = document.getElementById('menu');
+       menuDescription.classList.remove('menu')
+       menuRight.classList.remove('menu-right');
+       menuLeft.classList.remove('menu-left');
+       menuLeft.style.width='100%'
+       menuRight.style.width='100%'
+       menuDescription.classList.add('menu-block');
+       menuCenterImg.style.display='none';
+     
+     }
+      function removeClass(){
+        let menuDescription = document.getElementById('menu');
+        // menuDescription.style.display='none'
+        
+      }
+
+    //  function toggleMenu(){
+    //   menuCenterImg.classList.toggle('active')
+    //  }
+
     </script>
   </body>
 </html>

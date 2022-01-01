@@ -1,0 +1,310 @@
+@media (min-width: 576px) {
+    .col-s-1 {
+      width: 8.33%;
+    }
+    .col-s-2 {
+      width: 16.66%;
+    }
+    .col-s-3 {
+      width: 25%;
+    }
+    .col-s-4 {
+      width: 33.33%;
+    }
+    .col-s-5 {
+      width: 41.66%;
+    }
+    .col-s-6 {
+      width: 50%;
+    }
+    .col-s-7 {
+      width: 58.33%;
+    }
+    .col-s-8 {
+      width: 66.66%;
+    }
+    .col-s-9 {
+      width: 75%;
+    }
+    .col-s-10 {
+      width: 83.33%;
+    }
+    .col-s-11 {
+      width: 91.66%;
+    }
+    .col-s-12 {
+      width: 100%;
+    }
+  }
+  
+  /*  Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .col-s-1 {
+      width: 8.33%;
+    }
+    .col-s-2 {
+      width: 16.66%;
+    }
+    .col-s-3 {
+      width: 25%;
+    }
+    .col-s-4 {
+      width: 33.33%;
+    }
+    .col-s-5 {
+      width: 41.66%;
+    }
+    .col-s-6 {
+      width: 50%;
+    }
+    .col-s-7 {
+      width: 58.33%;
+    }
+    .col-s-8 {
+      width: 66.66%;
+    }
+    .col-s-9 {
+      width: 75%;
+    }
+    .col-s-10 {
+      width: 83.33%;
+    }
+    .col-s-11 {
+      width: 91.66%;
+    }
+    .col-s-12 {
+      width: 100%;
+    }
+  }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .col-s-1 {
+      width: 8.33%;
+    }
+    .col-s-2 {
+      width: 16.66%;
+    }
+    .col-s-3 {
+      width: 25%;
+    }
+    .col-s-4 {
+      width: 33.33%;
+    }
+    .col-s-5 {
+      width: 41.66%;
+    }
+    .col-s-6 {
+      width: 50%;
+    }
+    .col-s-7 {
+      width: 58.33%;
+    }
+    .col-s-8 {
+      width: 66.66%;
+    }
+    .col-s-9 {
+      width: 75%;
+    }
+    .col-s-10 {
+      width: 83.33%;
+    }
+    .col-s-11 {
+      width: 91.66%;
+    }
+    .col-s-12 {
+      width: 100%;
+    }
+  }
+  
+  /*  Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .col-s-1 {
+      width: 8.33%;
+    }
+    .col-s-2 {
+      width: 16.66%;
+    }
+    .col-s-3 {
+      width: 25%;
+    }
+    .col-s-4 {
+      width: 33.33%;
+    }
+    .col-s-5 {
+      width: 41.66%;
+    }
+    .col-s-6 {
+      width: 50%;
+    }
+    .col-s-7 {
+      width: 58.33%;
+    }
+    .col-s-8 {
+      width: 66.66%;
+    }
+    .col-s-9 {
+      width: 75%;
+    }
+    .col-s-10 {
+      width: 83.33%;
+    }
+    .col-s-11 {
+      width: 91.66%;
+    }
+    .col-s-12 {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .icon-header {
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .menu {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .icon {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .input-serach {
+      height: 100%;
+      width: 50%;
+      padding-top: 16px;
+    }
+    .input-serach-top input {
+      width: 100px;
+    }
+    .input-serach-top i {
+      position: relative;
+      top: 20px;
+      right: 5px;
+    }
+    .input-serach a {
+      display: none;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+      .section-right{
+        display: flex;
+        width: 100%;
+        padding-right: 25px;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    .section-right a{
+     font-size: 16px;
+    }
+    .section-right p{
+       font-size: 24px;
+    }
+    .section-right button{
+        font-size: 21px;
+     }
+  }
+  @media screen and (max-width: 768px) {
+      .item-1{
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+      }
+      .item-1 img {
+    max-height: 100%;
+    max-width:100%;
+}
+#description{
+    font-size: 12px;
+}
+  }
+  
+  @media screen and (max-width: 768px) {
+    .info-orginal-news .info-right{
+  display: none;
+}
+.info-left{
+    width: 100%;
+}
+.info-left ul li {
+    color: white;
+    width: 225px;
+    height: 28px;
+    margin: 14px;
+    font-size: 15px;
+}
+  }
+  
+  @media screen and (max-width: 768px) {
+    #info ul {
+        font-size: 19px;
+    }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .section-pic{
+      height: 250px;
+    }
+    .section-pic .section-info {
+        width: 100%;
+        font-size: 15px;
+    }
+    .section-pic img{
+      display: none;
+    }
+    .section-info ul li {
+        color: white;
+        width: 187px;
+        height: 32px;
+        margin: 14px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #dokme{
+      padding-bottom: 23px;
+    }
+    #dokme button {
+      font-size: 16px;
+      width: 200px;
+      height: 34px;
+    }
+  }
+
+  @media  screen and (max-width:768px) {
+    .info ul {
+      color: white;
+      display: flex;
+    font-size: 19px;
+      margin-top: 10px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+    .info ul li {
+  margin-right: 30px;
+   margin-top: 10px;
+   width: auto;
+    }
+    .info{
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+
+  @media screen and (max-width:768px) {
+    #info-last ul li{
+      font-size: 19px;
+      cursor: pointer;
+      padding-left: 38px;
+    }
+  }
