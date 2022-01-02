@@ -80,8 +80,7 @@
   }
   #info ul li {
     font-size: 1.4rem;
-    padding: 0;
-    padding-right: 20px;
+    padding-right: 4px;
   }
 }
 @media screen and (max-width: 992px) {

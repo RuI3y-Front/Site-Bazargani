@@ -411,19 +411,19 @@ a {
 
 #info ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  font-size: 26px;
-  color: aliceblue;
-  font-weight: 100;
-  padding: 37px 0px;
-  align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 26px;
+    color: aliceblue;
+    font-weight: 100;
+    width: 100%;
+    padding: 37px 0px;
+    align-items: baseline;
 }
 
 #info ul li {
   cursor: pointer;
-  padding-left: 41px;
   margin-right: 14px;
   margin-top: 10px;
 }
@@ -518,14 +518,17 @@ a {
   padding-bottom: 20px;
 }
 .info ul {
-  color: white;
   display: flex;
-  font-size: 26px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 26px;
+  color: aliceblue;
+  font-weight: 100;
+ width: 100%;
+  align-items: baseline;
 }
 .info ul li {
-    margin-right: 70px;
     width: 160px;
     text-align: center;
     align-items: center;
