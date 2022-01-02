@@ -19,11 +19,13 @@
     <title>OtaghBazargan</title>
   </head>
   <body>
+   
     <header class="container">
       <div class="icon-header " id="menu-icon-responsive">
-        <div class="menu-icon " id="menu-icon" onclick="MyFunction()">
+        <div class="menu-icon " id="menu-icon" >
           <i class="fas fa-bars"></i>
         </div>
+       
         <div class="menu-title">
           <p>اتاق بازرگانی صنایع معادن و کشاورزی خراسان رضوی</p> 
         </div>
@@ -331,6 +333,25 @@
         </ul>
       </div>
     </section>
+      <div id="togglee">TExtTT</div>
+
+    <div class="nav-header">
+      <a class="header-nav-close" id="header-nav-close">
+        <span>
+
+        </span>
+      </a>
+      <div class="Middel">
+      <ul >
+        <li>s</li>
+        <li>a</li>
+        <li>d</li>
+        <li>s</li>
+        <li>a</li>
+        <li>a</li>
+      </ul>
+    </div>
+    </div>
 
     <script>
       var slideIndex = 0;
@@ -374,36 +395,46 @@
       // }
       let menuDescription = document.getElementById('menu');
 
-     function MyFunction(){
-       let menuRight = document.getElementById('menu-right');
-       let menuLeft = document.getElementById('menu-left');
+    //  function MyFunction(){
+    //    let menuRight = document.getElementById('menu-right');
+    //    let menuLeft = document.getElementById('menu-left');
 
-       menuRight.classList.remove('menu-right');
-       menuLeft.classList.remove('menu-left');
-       menuLeft.style.width='100%'
-       menuRight.style.width='100%'
+    //    menuRight.classList.remove('menu-right');
+    //    menuLeft.classList.remove('menu-left');
+    //    menuLeft.style.width='100%'
+    //    menuRight.style.width='100%'
 
-       menuCenterImg.style.display='none'
+    //    menuCenterImg.style.display='none'
 
-       if(menuDescription.classList=='menu'){
-        menuDescription.classList.remove('menu');
-        menuDescription.classList.add('menu-block');
-       }else{
-         menuDescription.classList.add('menu')
-         menuDescription.classList.remove('menu-block')
-         menuCenterImg.style.display='flex'
-      menuCenterImg.style.flexDirection = 'row'
-       }
+    //    if(menuDescription.classList=='menu'){
+    //     menuDescription.classList.remove('menu');
+    //     menuDescription.classList.add('menu-block');
+    //    }else{
+    //      menuDescription.classList.add('menu')
+    //      menuDescription.classList.remove('menu-block')
+    //      menuCenterImg.style.display='flex'
+    //   menuCenterImg.style.flexDirection = 'row'
+    //    }
       
-     }
-     var x = window.matchMedia("(max-width: 997px)")
-myFunction(x)
-function myFunction(){
-  menuDescription.classList.add('menu')
-  menuDescription.classList.remove('menu-block')
-}
-x.addListener(myFunction)
-   
+    //  }
+//      var x = window.matchMedia("(max-width: 997px)")
+// myFunction(x)
+// function myFunction(){
+//   menuDescription.classList.add('menu')
+//   menuDescription.classList.remove('menu-block')
+// }
+// x.addListener(myFunction)
+
+
+  let Toggle = document.getElementById('menu-icon').addEventListener('click',function(){
+    let body=document.querySelector('body')
+    body.classList.add( 'menu-is-open')
+  })
+
+   let close=document.getElementById('header-nav-close').addEventListener('click',function(){
+     let body=document.querySelector('body');
+     body.classList.remove('menu-is-open')
+   })
     </script>
   </body>
 </html>
