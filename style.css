@@ -107,7 +107,8 @@ a {
 .menu-icon{
   font-size: 42px;
   padding-left: 21px;
-
+  display: none;
+  cursor: pointer;
 }
 .menu-icon i {
   padding-right: 30px;
@@ -133,6 +134,7 @@ a {
   padding-right: 15px;
   color: white;
   line-height: 90px;
+  cursor: pointer;
 }
 .menu-block ul li:hover {
   color: rgba(17, 59, 101, 1);
@@ -169,6 +171,7 @@ a {
   flex-direction: row;
   align-items: center;
 }
+
 .menu-center-style {
   display: flex;
   height: 100%;
@@ -307,8 +310,8 @@ a {
 }
 .item-1 {
   flex-direction: column;
-  width: 429px;
-  height: 400px;
+  width: 461px;
+  height: 399px;
   position: relative;
   text-align: center;
   margin-top: 5px;
@@ -345,17 +348,16 @@ a {
   transition: 500ms;
 }
 .item-1:hover #description {
-  bottom: 13px;
+  bottom:21px;
   height: 90%;
   width: 95%;
-  right: 18px;
+  margin-right: 24px;
+  right: -12px;
   display: flex;
   align-items: stretch;
-  flex-direction: column;
+  flex-flow: column nowrap;
   text-align: center;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: space-between;
+  place-content: center space-between;
   padding-top: 29px;
   padding-right: 20px;
   padding-left: 20px;
@@ -563,7 +565,7 @@ a {
 
 .info-left ul li {
     color: white;
-    width: 305px;
+    width: 289px;
     height: 41px;
     margin: 14px;
 }
@@ -642,8 +644,10 @@ a {
 }
 
 #info-last ul li {
-    cursor: pointer;
-    padding-left: 0px;
+  cursor: pointer;
+  padding-left: 0px;
+  margin-right: 67px;
+  width: 226px;
 }
 
 .mySlides {
@@ -719,11 +723,8 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+/* @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px;
   }
-}
-
-
-
+} */
