@@ -167,10 +167,16 @@
     .menu {
       display: none;
     }
+ 
   }
+  
   
   @media screen and (max-width: 768px) {
     .icon {
+      display: none;
+    }
+
+    .menu-title{
       display: none;
     }
   }
@@ -178,15 +184,19 @@
     .input-serach {
       height: 100%;
       width: 50%;
-      padding-top: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-left: 30px;
+      padding-top: 0;
     }
     .input-serach-top input {
-      width: 100px;
+      width: 200px;
     }
     .input-serach-top i {
       position: relative;
-      top: 20px;
-      right: 5px;
+      top: 0px;
+      right: 20px;
     }
     .input-serach a {
       display: none;
@@ -203,7 +213,7 @@
         align-items: flex-start;
       }
     .section-right a{
-     font-size: 1.6rem;
+     font-size: 1.2rem;
     }
     .section-right p{
        font-size:2.5rem;
@@ -223,7 +233,7 @@
     max-width:100%;
 }
 #description{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .item-p{
   font-size: 1.3rem;
@@ -246,7 +256,7 @@
   width: auto;
   height: auto;
   margin: 14px;
-  font-size: 2.1rem;
+  font-size: 1.5rem;
 }
 .info-left ul li a {
   background: none;
@@ -256,7 +266,7 @@
   
   @media screen and (max-width: 768px) {
     #info ul {
-      font-size: 2rem;
+      font-size: 1.4rem;
       padding-right: 10px;
     }
     #info ul li {
@@ -271,7 +281,7 @@
     }
     .section-pic .section-info {
         width: 100%;
-        font-size: 2.1rem;
+        font-size: 1.5rem;
     }
     .section-pic img{
       display: none;
@@ -289,10 +299,11 @@
       padding-bottom: 23px;
     }
     #dokme button {
-      font-size: 1.5rem;
-    height: 63px;
+      font-size: 1.4rem;
+      height: 40px;
+      width: 258px;
   }
-
+}
   @media  screen and (max-width:768px) {
     .info h1{
       font-size: 2.1rem;
@@ -300,11 +311,10 @@
     .info ul {
       color: white;
       display: flex;
-      font-size: 2.1rem;
+      font-size: 1.4rem;
       margin-top: 10px;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
       width: 100%;
   }
     .info ul li {
@@ -316,12 +326,11 @@
       padding: 0;
       margin: 0;
     }
-  }
+  } 
 
-  }
   @media screen and (max-width:768px) {
     #info-last ul li{
-      font-size: 2.1rem;
+      font-size: 1.5rem;
       cursor: pointer;
     }
   }
