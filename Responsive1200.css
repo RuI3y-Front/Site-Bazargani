@@ -66,7 +66,11 @@
         padding: 0%;
     }
     .info ul li{
-        margin-right: 35px;
+        margin: 0%;
+        padding: 0%;
+    }
+    .info ul {
+        justify-content: space-around;
     }
     .info h1{
        font-size: 2rem;

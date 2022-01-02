@@ -157,13 +157,7 @@
     }
   }
   
-  @media screen and (max-width: 768px) {
-    .icon-header {
-      height: auto;
-      
-    }
-  }
-  
+ 
   
   @media screen and (max-width: 768px) {
     .icon {
@@ -202,7 +196,7 @@
       .section-right{
         display: flex;
         width: 100%;
-        padding-right: 25px;
+
         justify-content: center;
         align-items: flex-start;
       }
@@ -264,10 +258,12 @@
     #info ul {
       font-size: 1.4rem;
       padding-right: 10px;
+      justify-content: space-around;
     }
     #info ul li {
-      padding-right: 20px;
-    }
+      padding-right: 0;
+      margin-right: 0;
+  }    
 
   }
   
@@ -278,6 +274,7 @@
     .section-pic .section-info {
         width: 100%;
         font-size: 1.5rem;
+        justify-content: space-around;
     }
     .section-pic img{
       display: none;
@@ -306,10 +303,7 @@
       font-size: 2.1rem;
     }
     .info ul {
-      color: white;
-      display: flex;
       font-size: 1.4rem;
-      margin-top: 10px;
       flex-direction: row;
       flex-wrap: nowrap;
       width: 100%;
@@ -329,6 +323,8 @@
     #info-last ul li{
       padding-right: 20px;
     width: auto;
-    margin: 0
+    margin: 0;
+    padding-left: 20px;
+    
     }
   }

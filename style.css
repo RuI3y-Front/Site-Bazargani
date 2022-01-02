@@ -635,7 +635,7 @@ a {
 #info-last ul {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   font-size: 26px;
   color: aliceblue;
@@ -646,7 +646,6 @@ a {
 #info-last ul li {
   cursor: pointer;
   padding-left: 0px;
-  margin-right: 67px;
   width: 226px;
 }
 
