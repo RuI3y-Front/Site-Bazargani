@@ -1,7 +1,7 @@
 .skitter {
   position: relative;
-  max-width: 2400px;
-  height: 5000px;
+  max-width: 2100px;
+  height: 450px;
   background: black;
 }
 .skitter.with-dots {
@@ -23,6 +23,7 @@
 }
 .skitter .container_skitter .image_main {
   width: 100%;
+  height: 650px !important;
 }
 .skitter .image {
   overflow: hidden;
@@ -31,6 +32,7 @@
 .skitter .image > img {
   width: 100%;
   display: none;
+  height: 400px;
 }
 .skitter .box_clone {
   position: absolute;
