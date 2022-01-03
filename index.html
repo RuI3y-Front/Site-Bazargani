@@ -11,18 +11,22 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
- 
- 
+  
+    <!-- <script src="./dist/jquery.skitter.min.js"></script> -->
+    
+    <link href="./dist/skitter.css" type="text/css" media="all" rel="stylesheet" />
+
     <link rel="stylesheet" href="./Responsive1200.css" />
     <link rel="stylesheet" href="./Responsive992.css" />
     <link rel="stylesheet" href="./CssResPonsive768.css" />
-    <title>OtaghBazargan</title>
+    <title >OtaghBazargan</title>
   </head>
   <body>
    
-    <header class="container">
-      <div class="icon-header " id="menu-icon-responsive">
-        <div class="menu-icon " id="menu-icon" >
+    <header class="container ">
+      <div class="icon-header-w " id="menu-icon-responsive">
+        <div class="icon-header wrapper ">
+        <div class="menu-icon  " id="menu-icon" >
           <i class="fas fa-bars"></i>
         </div>
        
@@ -56,7 +60,8 @@
         </div>
         </div>
       </div>
-      <nav class="menu" id="menu">
+      </div>
+      <nav class="menu wrapper" id="menu">
         <div class="menu-right col-l-4" id="menu-right">
           <ul>
             <li>
@@ -99,56 +104,56 @@
           </ul>
         </div>
       </nav>
-      <div class="pic-haram">
-        <div class="slider">
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="./img/r2.jpg" />
-             
-              <div class="section-right col-l-9">
-                <p>برگزاری محفل ادبی عطر یاس در حرم امام رضا (ع)</p>
-                <a>
-                  حرم امام رضا(ع) پذیرایه شما مهمانان عزیز از سراسر ایران است ما میتوانیم اوقات خوب و ارامش بخشی رو برایه شما دوستان عزیز فراهم بفرماییم
-                </a>
-                <button type="button">بیشتر بخوانید</button>
+      <!-- <div class="section-right col-l-9">
+        <p>برگزاری محفل ادبی عطر یاس در حرم امام رضا (ع)</p>
+        <a>
+          حرم امام رضا(ع) پذیرایه شما مهمانان عزیز از سراسر ایران است ما میتوانیم اوقات خوب و ارامش بخشی رو برایه شما دوستان عزیز فراهم بفرماییم
+        </a>
+        <button type="button">بیشتر بخوانید</button>
+      </div> -->
+      <div class="pic-haram wrapper">
+        <div class="skitter skitter-large with-dots"  >
+          <ul>
+            <li>
+              <a href="#cut">
+                <img src="./img/pic1.jpg" class="paralell" />
+              </a>
+              <div class="label_text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <a href="#see-more" class="btn btn-xs btn-warning">See more</a>
+                </p>
               </div>
-
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./img/r3.jpg" />
-              <div class="section-right">
-                <p>برگزاری محفل ادبی عطر یاس در حرم امام رضا (ع)</p>
-                <a>حرم امام رضا (ع) یکی از مشهورترین جاذبه‌های گردشگری مشهد و ایران است. سالانه میلیون‌ها نفر زائر از ایران و جهان برای زیارت شاه خراسان روانه مشهد می‌شوند 
-                </a>
-                <button type="button">بیشتر بخوانید</button>
+            </li>
+            <li>
+              <a href="#swapBlocks">
+                <img src="./img/picharam.jpg" class="directionTop" />
+              </a>
+              <div class="label_text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <a href="#see-more" class="btn btn-xs btn-warning">See more</a>
+                </p>
               </div>
-              
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./img/R1.jpg" />
-              <div class="section-right">
-                <p>برگزاری محفل ادبی عطر یاس در حرم امام رضا (ع)</p>
-                <a>
-                  محفل ادبی عطر یاس ویژه بانوان در شام شهادات جانسوز حضرت صدیقه کبری
-                  فاطمه زهرا (س) در جوار بارگاه ملکوتی امام رضا (ع) برگزار شد.
-                </a>
-                <button type="button">بیشتر بخوانید</button>
+            </li>
+            <li>
+              <a href="#swapBarsBack">
+                <img src="./img/r2.jpg" class="swapBarsBack" />
+              </a>
+              <div class="label_text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <a href="#see-more" class="btn btn-xs btn-warning">See more</a>
+                </p>
               </div>
-            </div>
-          </div>
-          <div style="text-align: center; display: none">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
+            </li>
+          </ul>
         </div>
         
       </div>
     </header>
     <section class="items">
-      <div class="items-cart">
+      <div class="items-cart wrapper">
         <div class="item-1">
           <img src="./img/725555_863.jpg"  />
           <div id="description">
@@ -225,7 +230,8 @@
       </div>
 
       <div id="info">
-        <ul class="col-l-12">
+        <div class="wrapper">
+        <ul class="col-l-12 ">
           <li>آرشیو اخبار</li>
           <li>خدمات بازرگانی</li>
           <li>اطلاعیه</li>
@@ -234,10 +240,13 @@
           <li>پادکست</li>
         </ul>
       </div>
-      <div class="section-pic">
+      </div>
+
+      <div class="section-pic ">
+        <div class="wrapper " style="position: relative;">
         <img src="./img/pic1.jpg" />
-        <div class="section-info col-m-10">
-          <div id="section-right">
+        <div class="section-info col-m-10 ">
+          <div id="section-right  ">
             <ul>
               <li>
                 <a> <i class="fas fa-plus"></i> درباره اتاق </a>
@@ -253,7 +262,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div >
             <ul>
               <li>
                 <a> <i class="fas fa-plus"></i>تاریخچه </a>
@@ -270,8 +279,10 @@
             </ul>
           </div>
         </div>
+        </div>
       </div>
-      <div class="info">
+      <div class="info ">
+        <div class="wrapper">
         <h1>خدمات بازرگانی</h1>
         <ul class="col-l-12">
           <li>کارت بازرگانی</li>
@@ -281,8 +292,9 @@
           <li>خدمات الکترونیکی</li>
         </ul>
       </div>
+      </div>
       <div class="info-orginal-news">
-        <div class="info-news col-l-12">
+        <div class="info-news col-l-12 wrapper">
           <div class="info-right col-l-4">
             <img src="img/گل-رز-آبی-3.jpg" alt="" />
             <p>
@@ -318,19 +330,21 @@
             </ul>
           </div>
         </div>
-        <div id="dokme">
+        <div class="wrapper" id="dokme">
           <button type="button" class="Vordi-to-shoaara">
             ورود ب صفحه اصلی شورا
           </button>
         </div>
       </div>
       <div id="info-last">
+        <div class="wrapper">
         <ul>
           <li>سامانه یکپارچه کارت بازرگانی هوشمند</li>
           <li>سامانه رسیدگی به شکایات</li>
           <li>سامانه ملی قوانین و مقررات</li>
           <li>دایرکتوری اعضا</li>
         </ul>
+        </div>
       </div>
     </section>
 
@@ -352,78 +366,14 @@
     </div>
     </div>
 
+
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./dist/jquery.skitter.min.js"></script>
     <script>
-      var slideIndex = 0;
-      showSlides();
 
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides,133200); // Change image every 2 seconds
-      }
-
-
-
-      var navbar=document.getElementById('menu-icon-responsive')
-
-      
-      let str= document.getElementById('menu-icon')
-      console.log(navbar);
-
-      let menuCenterImg = document.getElementById('menu-center');
-      
- 
-
-      // let body=document.querySelector('icon-header')
-      // body.onclick=function(){
-      //   let menuDescription = document.getElementById('menu');
-      //   menuDescription.style.display='none'
-      // }
-      let menuDescription = document.getElementById('menu');
-
-    //  function MyFunction(){
-    //    let menuRight = document.getElementById('menu-right');
-    //    let menuLeft = document.getElementById('menu-left');
-
-    //    menuRight.classList.remove('menu-right');
-    //    menuLeft.classList.remove('menu-left');
-    //    menuLeft.style.width='100%'
-    //    menuRight.style.width='100%'
-
-    //    menuCenterImg.style.display='none'
-
-    //    if(menuDescription.classList=='menu'){
-    //     menuDescription.classList.remove('menu');
-    //     menuDescription.classList.add('menu-block');
-    //    }else{
-    //      menuDescription.classList.add('menu')
-    //      menuDescription.classList.remove('menu-block')
-    //      menuCenterImg.style.display='flex'
-    //   menuCenterImg.style.flexDirection = 'row'
-    //    }
-      
-    //  }
-//      var x = window.matchMedia("(max-width: 997px)")
-// myFunction(x)
-// function myFunction(){
-//   menuDescription.classList.add('menu')
-//   menuDescription.classList.remove('menu-block')
-// }
-// x.addListener(myFunction)
-
+   
 
   let Toggle = document.getElementById('menu-icon').addEventListener('click',function(){
     let body=document.querySelector('body')
@@ -434,6 +384,10 @@
      let body=document.querySelector('body');
      body.classList.remove('menu-is-open')
    })
+
+   $(function() {
+  $('.skitter-large').skitter();
+});
     </script>
   </body>
 </html>
