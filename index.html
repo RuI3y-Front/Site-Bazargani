@@ -22,9 +22,16 @@
     <title >OtaghBazargan</title>
   </head>
   <body>
-   
+    <div class="serach-modall" id="search-screen">
+      <button class="close-input" type="button" id="close-input">X</button>
+      <div id="input-responsiv">
+      <input type="search" placeholder="جستجو کنید ...">
+    </div>
+    </div>
+
+
     <header class="container ">
-      <div class="icon-header-w " id="menu-icon-responsive">
+      <div class="icon-header-w " id="menu-icon-responsive" style="position: relative;">
         <div class="icon-header wrapper ">
         <div class="menu-icon  " id="menu-icon" >
           <i class="fas fa-bars"></i>
@@ -42,22 +49,18 @@
               <a>IR</a>
               <img src="./img/icons8-iran-48.png"  />
             </li>
-            <li>
-              <a>En</a>
-              <img
-                src="./img/united-kingdom (1).png "
-                
-              />
-            </li>
+            
           </ul>
         </div>
+        <img class="logo" src="img/apple-icon.png" />
       
         <div class="input-serach col-l-5 col-m-6" >
-          <div class="input-serach-top ">
+          <div class="input-serach-top  " id="input-serach-top">
           <i class="fas fa-search"></i>
           <input class="col-m-5"  type="search" placeholder=" جستجو " />
           <a class="col-m-5"> جستجو پیشرفته </a>
         </div>
+       
         </div>
       </div>
       </div>
@@ -104,13 +107,7 @@
           </ul>
         </div>
       </nav>
-      <!-- <div class="section-right col-l-9">
-        <p>برگزاری محفل ادبی عطر یاس در حرم امام رضا (ع)</p>
-        <a>
-          حرم امام رضا(ع) پذیرایه شما مهمانان عزیز از سراسر ایران است ما میتوانیم اوقات خوب و ارامش بخشی رو برایه شما دوستان عزیز فراهم بفرماییم
-        </a>
-        <button type="button">بیشتر بخوانید</button>
-      </div> -->
+     
       <div class="pic-haram wrapper">
         <div class="skitter skitter-large with-dots"  >
           <ul>
@@ -118,33 +115,42 @@
               <a href="#cut">
                 <img src="./img/r3.jpg" class="paralell" />
               </a>
-              <div class="label_text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  <a href="#see-more" class="btn btn-xs btn-warning">See more</a>
-                </p>
+              <div class="label_text  col-l-9">
+                <div class="section-right ">
+        <p>برگزاری محفل ادبی عطر یاس در حرم امام رضا (ع)</p>
+        <a>
+          حرم امام رضا(ع) پذیرایه شما مهمانان عزیز از سراسر ایران است ما میتوانیم اوقات خوب و ارامش بخشی رو برایه شما دوستان عزیز فراهم بفرماییم
+        </a>
+        <button type="button">بیشتر بخوانید</button>
+      </div>
               </div>
             </li>
             <li>
               <a href="#swapBlocks">
                 <img src="./img/picharam.jpg" class="directionTop" />
               </a>
-              <div class="label_text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  <a href="#see-more" class="btn btn-xs btn-warning">See more</a>
-                </p>
+              <div class="label_text col-l-9">
+                <div class="section-right">
+                  <p>برگزاری محفل ادبی عطر یاس در حرم امام رضا (ع)</p>
+                  <a>
+                    حرم امام رضا(ع) پذیرایه شما مهمانان عزیز از سراسر ایران است ما میتوانیم اوقات خوب و ارامش بخشی رو برایه شما دوستان عزیز فراهم بفرماییم
+                  </a>
+                  <button type="button">بیشتر بخوانید</button>
+                </div>
               </div>
             </li>
             <li>
               <a href="#swapBarsBack">
                 <img src="./img/r2.jpg" class="swapBarsBack" />
               </a>
-              <div class="label_text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  <a href="#see-more" class="btn btn-xs btn-warning">See more</a>
-                </p>
+              <div class="label_text col-l-9">
+                      <div class="section-right ">
+        <p>برگزاری محفل ادبی عطر یاس در حرم امام رضا (ع)</p>
+        <a>
+          حرم امام رضا(ع) پذیرایه شما مهمانان عزیز از سراسر ایران است ما میتوانیم اوقات خوب و ارامش بخشی رو برایه شما دوستان عزیز فراهم بفرماییم
+        </a>
+        <button type="button">بیشتر بخوانید</button>
+      </div>
               </div>
             </li>
           </ul>
@@ -356,14 +362,36 @@
       </a>
       <div class="Middel">
       <ul >
-        <li>صفحه نخست </li>
-        <li>خدمات بازرگانی </li>
-        <li>درباره اتاق </li>
-        <li>شورای گفت و گو </li>
-        <li>شورای گفت و گو </li>
-        <li>آموزش و پژوهش </li>
+        <li>  <a> صفحه نخست
+        </a>
+        </li>
+        <li> <a>
+          خدمات بازرگانی
+        </a>
+         </li>
+        <li> <a>
+          درباره اتاق
+        </a> </li>
+        <li> 
+          <a>شورای گفت و گو 
+          </a>
+          </li>
+        <li> 
+          <a>مشاوران </li>
+
+          </a>
+        <li>
+          <a>آموزش و پژوهش 
+          </a>
+          </li>
+
       </ul>
     </div>
+    <ul class="menu-social-Media"> 
+      <li><i class="fab fa-telegram-plane"></i></li>
+      <li><i class="fab fa-whatsapp"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+    </ul>
     </div>
 
 
@@ -388,6 +416,22 @@
    $(function() {
   $('.skitter-large').skitter();
 });
+
+    let closeSerach = document.getElementById('close-input')
+    let searchScreen = document.getElementById('search-screen')
+      closeSerach.addEventListener('click',removeSerach)
+        function removeSerach(){
+          searchScreen.classList.remove("serach-open")
+        }
+
+        let inputSerachTop = document.getElementById('input-serach-top');
+        inputSerachTop.addEventListener('click', showSerach)
+        function showSerach(){
+        
+          searchScreen.classList.add("serach-open")
+         
+          
+        }
     </script>
   </body>
 </html>

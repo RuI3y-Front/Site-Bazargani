@@ -160,26 +160,43 @@
  
   
   @media screen and (max-width: 768px) {
+    .logo{
+      display: block;
+    }
     .icon {
       display: none;
+      position: absolute;
+      left: 0;
+      padding: 0;
+      margin: 0;
+    }
+    .icon ul {
+      padding: 0%;
+      margin: 0%;
+      justify-content: flex-end;
+      padding-left: 13px;
+      padding-top: 6px;
+
+    }
+    .icon ul li:nth-child(4) {
+    display: none;
     }
 
     .menu-title{
-      display: none;
+      display: block;
+      font-size: 1.2rem;
     }
   }
   @media screen and (max-width: 768px) {
     .input-serach {
-      height: 100%;
-      width: 50%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      margin-left: 30px;
-      padding-top: 0;
+      padding-top: 63px;
+      padding-right: 0px;
+      padding-left: 78px;
+     
     }
+  
     .input-serach-top input {
-      width: 200px;
+      width: 27px;
     }
     .input-serach-top i {
       position: relative;
@@ -193,6 +210,9 @@
   
 
   @media screen and (max-width: 768px) {
+    .label_skitter{
+      width: 100%;
+    }
       .section-right{
         display: flex;
         width: 100%;
@@ -221,7 +241,7 @@
     max-width:100%;
 }
 #description{
-  font-size: 1rem;
+  font-size: 1.2rem;
 
 }
 
@@ -229,8 +249,7 @@
   font-size: 1.3rem;
 }
   #item-news{
-    font-size: 1.8rem;
-    margin-right: 16px;
+    font-size: 1.5rem;    margin-right: 16px;
   }
 
   }
@@ -246,30 +265,39 @@
   width: auto;
   height: auto;
   margin: 14px;
-  font-size: 1.5rem;
-}
+  font-size: 1.3rem;}
 .info-left ul li a {
   background: none;
+  padding-right: 0px;
   text-align: start;
+  height: 58px;
 }
   }
   
   @media screen and (max-width: 768px) {
     #info ul {
       font-size: 1.4rem;
-      padding-right: 10px;
       justify-content: space-around;
+      display: block;
+      padding: 0%;
+      margin: 0%;
     }
     #info ul li {
-      padding-right: 0;
       margin-right: 0;
+      width: auto;
+      height: 66px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      padding: 0;
+      margin: 0%;
   }    
 
   }
   
   @media screen and (max-width: 768px) {
     .section-pic{
-      height: 250px;
       position: relative;
     }
     .section-pic .wrapper{
@@ -286,6 +314,7 @@
     .section-info ul li {
         color: white;
         margin: 14px;
+        height: 69px;
         width: 207px;
     }
     .section-info ul li a {
@@ -305,17 +334,23 @@
   @media  screen and (max-width:768px) {
     .info h1{
       font-size: 2.1rem;
+    padding-bottom: 8px;
+
     }
     .info ul {
       font-size: 1.4rem;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      width: 100%;
+      display: block;
+      justify-content: center;
+      line-height: 42px;
   }
     .info ul li {
-  margin-right: 0;
-   margin-top: 10px;
-   width: auto;
+      margin-right: 0;
+      width: auto;
+      height: 66px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      display: flex;
     }
     .info{
       padding: 0;
@@ -324,11 +359,17 @@
   } 
 
   @media screen and (max-width:768px) {
+    #info-last ul {
+      display: flex;
+      flex-direction: column;
+    }
     #info-last ul li{
-      padding-right: 20px;
-    width: auto;
-    margin: 0;
-    padding-left: 20px;
-    
+      margin-right: 0;
+      width: auto;
+      height: 66px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      display: flex;
     }
   }

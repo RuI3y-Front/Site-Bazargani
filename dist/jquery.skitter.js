@@ -44,7 +44,7 @@
     velocity: 1,
 
     // Interval between transitions
-    interval: 2500, 
+    interval: 22500, 
 
     // Default animation
     animation: '',

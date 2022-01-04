@@ -6,8 +6,10 @@
 .icon-header{
   height: 100%;
   padding-top: 10px;
-  padding-bottom: 10px;
-  
+  padding-bottom: 22px;  
+}
+.input-serach-top a{
+  display: none;
 }
 
   .input-serach {
@@ -19,13 +21,15 @@
     margin-left:4px
   }
   .input-serach input {
- 
-    height: 27px;
+    width: 23px;
+    height: 24px
   }
   .menu-icon{
     display: block;
   }
-
+.logo{
+  display: block;
+}
   
   .menu-title {
     width: 50%;
@@ -46,8 +50,13 @@
    
  
   }
+
+
   
 @media screen and (max-width: 992px) {
+  .label_skitter{
+    width: 100%;
+  }
   .section-right {
     width: 100%;
   }

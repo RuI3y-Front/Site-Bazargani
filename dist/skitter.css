@@ -1,7 +1,7 @@
 .skitter {
   position: relative;
   max-width: 2100px;
-  height: 450px;
+  height: 550px !important;
   background: black;
 }
 .skitter.with-dots {
@@ -23,7 +23,7 @@
 }
 .skitter .container_skitter .image_main {
   width: 100%;
-  height: 650px !important;
+  height:550px !important;
 }
 .skitter .image {
   overflow: hidden;
@@ -32,7 +32,7 @@
 .skitter .image > img {
   width: 100%;
   display: none;
-  height: 400px;
+  height: 550px;
 }
 .skitter .box_clone {
   position: absolute;
@@ -188,24 +188,19 @@
   height: 32px;
 }
 .label_skitter {
+  
   z-index: 150;
   position: absolute;
   bottom: 0px;
-  left: 0px;
-  display: none;
-  z-index: 150;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  display: none;
-  background: linear-gradient(transparent, #000);
-  width: 100%;
+  width: 48%;
+  height: 100%;
+ 
 }
 .label_skitter p {
   color: #fff;
   padding: 10px;
   margin: 0;
-  font-size: 14px;
+
 }
 .progressbar {
   background-color: #000;
