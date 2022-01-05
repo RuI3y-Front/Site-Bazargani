@@ -229,7 +229,7 @@ a {
 
 .menu-block ul li {
     width: 80%;
-    padding-right: 15px;
+    padding-right: 20px;
     color: white;
     line-height: 90px;
     cursor: pointer;
@@ -296,13 +296,14 @@ a {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 18px;
+    top: -5px;
 }
 
 .menu-right {
     height: 100%;
     display: flex;
     flex-direction: row;
+    padding-left: 20px;
     align-items: center;
 }
 
@@ -310,6 +311,7 @@ a {
     height: 100%;
     display: flex;
     flex-direction: row;
+    padding-right: 20px;
     align-items: center;
 }
 
@@ -318,10 +320,10 @@ a {
     position: absolute;
     border-radius: 50%;
     background: white;
-    width: 203px;
+    width: 106px;
     overflow: hidden;
-    height: 119px;
-    bottom: 162px;
+    height: 90px;
+    bottom: 153px;
 }
 
 .menu .Round img {
@@ -329,29 +331,29 @@ a {
     position: relative;
     border-radius: 50%;
     background: white;
-    width: 172px;
+    width: 100px;
     overflow: hidden;
-    height: 107px;
-    bottom: -7px;
+    height: 79px;
+    bottom: -4px
 }
 
 .menu ul {
     display: flex;
     flex-direction: row;
-    padding-right: 30px;
-    padding-left: 53px;
+  
 }
 
 .menu ul li {
     padding-right: 4px;
-    height: 16px;
     font-weight: 500;
+    width: 93px;
 }
 
 .menu ul li i {
     color: rgb(0, 44, 90);
     padding-right: 4px;
     padding-left: 4px;
+    display: none;
 }
 
 
@@ -397,12 +399,12 @@ a {
 }
 
 .section-right p {
-    font-size: 68px;
+    font-size: 50px;
     font-weight: 900;
 }
 
 .section-right a {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .section-right button {
@@ -441,7 +443,7 @@ a {
 
 .item-1 {
     flex-direction: column;
-    width: 461px;
+    width: 24%;
     height: 399px;
     position: relative;
     text-align: center;
@@ -515,8 +517,8 @@ a {
 }
 
 .item-back {
-    width: 99px;
-    height: 104px;
+    width: 80px;
+    height: 83px;
     border: 1px solid;
     background-color: white;
     opacity: none !important;
@@ -556,7 +558,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    font-size: 26px;
+    font-size: 21px;
     color: aliceblue;
     font-weight: 100;
     width: 100%;
@@ -652,7 +654,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
-    padding: 30px 30px;
 }
 
 .info h1 {
@@ -671,7 +672,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    font-size: 26px;
+    font-size: 21px;
     color: aliceblue;
     font-weight: 100;
     width: 100%;
@@ -796,7 +797,7 @@ a {
     flex-wrap: nowrap;
     justify-content: space-around;
     flex-direction: row;
-    font-size: 26px;
+    font-size: 21px;
     color: aliceblue;
     padding-top: 15px;
     text-align: center;
@@ -1007,7 +1008,7 @@ img {
 
 /* On smaller screens, decrease text size */
 
-@media only screen and ( max-width:1682px) {
+@media only screen and ( min-width:1682px) {
     .menu-center p {
         display: none;
     }
@@ -1051,7 +1052,8 @@ img {
         height: 100%;
     }
     .menu ul li {
-      width: 162px;
+        width: 151px;
+
     }
     .menu ul li a:hover {
         border: none;
@@ -1067,7 +1069,7 @@ img {
         width: 75%;
     }
     .section-right p {
-        font-size: 3.4rem;
+        font-size: 2.8rem;
     }
 }
 
@@ -1166,10 +1168,10 @@ img {
         width: 100%;
     }
     .section-right p {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
     .section-right a {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -1485,10 +1487,10 @@ img {
         font-size: 1.2rem;
     }
     .section-right p {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .section-right button {
-        font-size: 21px;
+        font-size: 14px;
     }
 }
 
